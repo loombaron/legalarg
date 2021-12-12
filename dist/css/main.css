@@ -13,10 +13,10 @@
 
 .btn-main {
   color: #333;
-  background-color: #1ecd0e; }
+  background-color: #bababa; }
 .btn-light {
   color: f4f4f4;
-  background-color: #1ecd0e; }
+  background-color: #bababa; }
 .btn-dark {
   color: f4f4f4;
   background-color: #fdfdfd; }
@@ -97,7 +97,7 @@ img {
     padding-bottom: 0.5rem;
     transition: border-color 0.5s; }
     #main-nav a:hover {
-      border-color: rgba(85, 5, 78, 0.349); }
+      border-color: rgba(199, 199, 199, 0.144); }
     #main-nav a.current {
       border-color: #25a330; }
 
@@ -133,8 +133,23 @@ img {
   #home-b .stats div {
     padding: 3rem 0; }
     #home-b .stats div:nth-child(odd) {
-      background: #1ecd0e; }
+      background: #bababa; }
     #home-b .stats div:nth-child(even) {
-      background: rgba(85, 5, 78, 0.349); }
+      background: rgba(199, 199, 199, 0.144); }
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem; }
+    #header-home .header-content {
+      padding-top: 5rem; } }
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
+
+  #headerhome {
+    height: 10rem; } }
 
 /*# sourceMappingURL=main.css.map */
