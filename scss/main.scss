@@ -96,3 +96,13 @@ img {
     }
   }
 }
+
+@media(max-width: 768px) {
+  .navbar {
+      flex-direction: row;
+      height: 120px;
+      padding: 20px;
+      z-index: 2;
+  }
+  
+}

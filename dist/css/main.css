@@ -94,4 +94,11 @@ img {
       font-size: 4rem;
       line-height: 1.2; }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    height: 120px;
+    padding: 20px;
+    z-index: 2; } }
+
 /*# sourceMappingURL=main.css.map */
