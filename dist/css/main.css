@@ -117,8 +117,18 @@ img {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr); }
-#home-a .fas {
-  color: #25a330;
-  padding-bottom: 04rem; }
+  #home-a .specials .fas {
+    color: #25a330;
+    padding-bottom: 04rem; }
+#home-b .stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  #home-b .stats li {
+    line-heights: 2; }
+    #home-b .stats li.stats-title {
+      font-size: 1.5rem; }
+    #home-b .stats li.stats-number {
+      font-size: 2rem;
+      font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
