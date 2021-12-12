@@ -130,5 +130,11 @@ img {
     #home-b .stats li.stats-number {
       font-size: 2rem;
       font-weight: bold; }
+  #home-b .stats div {
+    padding: 3rem 0; }
+    #home-b .stats div:nth-child(odd) {
+      background: #1ecd0e; }
+    #home-b .stats div:nth-child(even) {
+      background: rgba(85, 5, 78, 0.349); }
 
 /*# sourceMappingURL=main.css.map */
