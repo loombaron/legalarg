@@ -1,7 +1,19 @@
 // variables
 $website-width: 1280 px;
-$main-color: #25a330;
-$light-color: hsl(0, 0%, 73%);
+$main-color: rgb(184, 167, 23);
+$light-color: rgb(218, 218, 218);
 $medium-color: rgba(199, 199, 199, 0.144);
-$dark-color: rgb(253, 253, 253);
+$dark-color: rgb(15, 13, 13);
+$bright-color: rgb(61, 12, 12);
+$con-color: rgb(22, 2, 2);
 $bg-image: url("../img/bg3.jpg");
+
+// Set Text Color
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
