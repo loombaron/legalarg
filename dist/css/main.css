@@ -79,20 +79,6 @@ input[class^="btn-"]:hover {
   display: block;
   margin: 0 auto 1rem auto; }
 
-@media (max-width: 800px) {
-  #header-home {
-    height: 30rem; }
-    #header-home .header-content {
-      padding-top: 5rem; } }
-@media (max-width: 500px) {
-  #main-nav {
-    flex-direction: column;
-    align-items: center; }
-    #main-nav li {
-      padding: 1rem; }
-
-  #headerhome {
-    height: 10rem; } }
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -400,5 +386,118 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
         background: #b8a717; }
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem; }
+    #header-home .header-content {
+      padding-top: 5rem; } }
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
+
+  #headerhome {
+    height: 10rem;
+    border-bottom: 3px solid #b8a717;
+    background-position: 20% 30%; }
+    #headerhome .header-content {
+      display: none; }
+  #header-inner {
+    height: 10rem; }
+
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr; }
+    #home-a .specials #home-a .specials div,
+    #home-b .stats #home-a .specials div,
+    #home-c .process #home-a .specials div,
+    #about-d .testimonials #home-a .specials div,
+    #contact-b .contact-info #home-a .specials div,
+    .items #home-a .specials div {
+      border-bottom: 1px #dadada solid;
+      padding-bottom: 0; }
+      #home-a .specials #home-a .specials div:last-child,
+      #home-b .stats #home-a .specials div:last-child,
+      #home-c .process #home-a .specials div:last-child,
+      #about-d .testimonials #home-a .specials div:last-child,
+      #contact-b .contact-info #home-a .specials div:last-child,
+      .items #home-a .specials div:last-child {
+        border: none;
+        padding-bottom: 0; }
+    #home-a .specials #home-b .stats div,
+    #home-b .stats #home-b .stats div,
+    #home-c .process #home-b .stats div,
+    #about-d .testimonials #home-b .stats div,
+    #contact-b .contact-info #home-b .stats div,
+    .items #home-b .stats div {
+      padding: 2rem 0 1 rem 0; }
+    #home-a .specials #about-a .about-inmfo,
+    #home-b .stats #about-a .about-inmfo,
+    #home-c .process #about-a .about-inmfo,
+    #about-d .testimonials #about-a .about-inmfo,
+    #contact-b .contact-info #about-a .about-inmfo,
+    .items #about-a .about-inmfo {
+      grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
+    #home-a .specials #about-c,
+    #home-b .stats #about-c,
+    #home-c .process #about-c,
+    #about-d .testimonials #about-c,
+    #contact-b .contact-info #about-c,
+    .items #about-c {
+      display: none; }
+    #home-a .specials #contact-a .text-fields,
+    #home-b .stats #contact-a .text-fields,
+    #home-c .process #contact-a .text-fields,
+    #about-d .testimonials #contact-a .text-fields,
+    #contact-b .contact-info #contact-a .text-fields,
+    .items #contact-a .text-fields {
+      grid-template-areas: "name" "subject" "email" "phone" "message"; }
+    #home-a .specials #contact-b div,
+    #home-b .stats #contact-b div,
+    #home-c .process #contact-b div,
+    #about-d .testimonials #contact-b div,
+    #contact-b .contact-info #contact-b div,
+    .items #contact-b div {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px #555 solid; }
+      #home-a .specials #contact-b div:last-child,
+      #home-b .stats #contact-b div:last-child,
+      #home-c .process #contact-b div:last-child,
+      #about-d .testimonials #contact-b div:last-child,
+      #contact-b .contact-info #contact-b div:last-child,
+      .items #contact-b div:last-child {
+        borer: none;
+        margin-bottom: 0;
+        padding-bottom: 0; }
+    #home-a .specials #contact-c h1,
+    #home-b .stats #contact-c h1,
+    #home-c .process #contact-c h1,
+    #about-d .testimonials #contact-c h1,
+    #contact-b .contact-info #contact-c h1,
+    .items #contact-c h1 {
+      font-size: 2rem; }
+    #home-a .specials #main-footer,
+    #home-b .stats #main-footer,
+    #home-c .process #main-footer,
+    #about-d .testimonials #main-footer,
+    #contact-b .contact-info #main-footer,
+    .items #main-footer {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem; } }
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 3rem; } }
+@media (max-height: 330px) {
+  #header-home .header-content h1 {
+    font-size: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */
